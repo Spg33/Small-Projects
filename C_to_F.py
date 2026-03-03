@@ -11,7 +11,7 @@ for i in range(3):   # modify this for more inputs
 
 # convert values from Celsius to Fahrenheit
 
-for celsius in celsius_temperatures:   # you can reverse according to your needs
+for celsius in celsius_temperatures:   # reverse according to your needs
     fahrenheit = (celsius * 9/5) + 32
     fahrenheit_temperatures.append(fahrenheit)
 
