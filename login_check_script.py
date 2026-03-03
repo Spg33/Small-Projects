@@ -1,6 +1,6 @@
 # open, read and split a text file
 
-with open("filename.txt", "r") as file:  # Replace "filename.txt" with the file intended to use
+with open("filename.txt", "r") as file:  # Replace "filename.txt" with the file.extention intended to use
     file_text = file.read()
 usernames = file_text.split()
 
@@ -12,8 +12,10 @@ def login_check(login_list, current_user):
         if i == current_user:
             counter = counter + 1
     if counter >= 3:
-        return "You tried to login 3 or more times, therefore your account has been locked!"
+        return "User tried to login 3 or more times, therefore their account has to be locked!"
     else:
-        return "You can login!"
+        return "The user has logged in successfully!"
+        
+# Call the function
 
-login_check(usernames, "user")  # call the function & replace the "user" with the username
+login_check(usernames, "user") # Replace the "user" with the username
